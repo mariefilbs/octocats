@@ -16,8 +16,8 @@ li {
 
 .octocat {
   float: left;
-  
 }
+
 
 .octocat img{
   width: 350px;
@@ -33,7 +33,7 @@ li .authors {
 }
 
 .authors {
-  padding-left: 10px;
+  padding-left: 7px;
 }
 
 .authors img {
@@ -45,7 +45,7 @@ li .authors {
 
 .image-number {
   color: lightgrey;
-  padding-left: 7px;
+  /*padding-left: 3px;*/
 }
 
 .image-number::before {
@@ -65,5 +65,19 @@ li .authors {
 .image-footer {
   width: 350px;
   padding-bottom: 15px;
+  position: relative;
   border-bottom: 2px solid lightgrey;
+  margin-left: 10px;
 }
+
+.image-footer::before {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 7.5px 0 7.5px;
+  border-color: #dbdbdb transparent transparent transparent;
+ }
